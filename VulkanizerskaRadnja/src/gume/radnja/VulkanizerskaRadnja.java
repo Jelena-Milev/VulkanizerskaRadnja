@@ -37,7 +37,7 @@ public class VulkanizerskaRadnja {
 			return null;
 		LinkedList<AutoGuma> novaLista = new LinkedList<AutoGuma>();
 		for (int i = 0; i < gume.size(); i++)
-			if (gume.get(i).equals(markaModel))
+			if (gume.get(i).getMarkaModel().equalsIgnoreCase(markaModel))
 				novaLista.add(gume.get(i));
 
 		return novaLista;
