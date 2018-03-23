@@ -107,13 +107,33 @@ public class AutoGuma {
 			throw new RuntimeException("Visina van opsega");
 		this.visina = visina;
 	}
-
+	/**
+	 * Metoda koja ispisuje vrednosti svi atributa objekta klase AutoGuma
+	 * @return String koji sadrzi trenutne vrednosti svih atributa konkretnog
+	 * objekta klase guma
+	 */
 	@Override
 	public String toString() {
 		return "AutoGuma [markaModel=" + markaModel + ", precnik=" + precnik + ", sirina=" + sirina + ", visina="
 				+ visina + "]";
 	}
-
+	/**
+	 * Metoda poredi dva objekta i utvrdjuje da li su jednaki
+	 * @param obj objekat klase Object koji se poredi sa konkretnim objektom 
+	 * @return <ul> 
+	 * <li> true ako se <ul> 
+	 * 		<li> objekat poredi sa samim sobom</li>
+	 * 		<li> porede dva objekata cije su sve vrednosti odgovarajucih atributa iste</li>
+	 * 		</ul>	 
+	 * </li>
+	 * <li> false ako se 
+	 * 		<ul> 
+	 * 		<li> porede dva objekata kod kojih se vrednosti bar jednog atributa razlikuju</li>
+	 * 		<li> metodi prosledi null</li>
+	 * 		<li> metodi prosledi objekat koji nije klase AutoGuma</li>
+	 * 		</ul> 
+	 * </ul>
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

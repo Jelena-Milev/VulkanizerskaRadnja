@@ -18,6 +18,9 @@ public class VulkanizerskaRadnja {
 	/**
 	 * Metoda koja dodaje novu auto gumu u listu guma vulkanizerske radnje
 	 * @param a nova guma koju treba dodati u listu
+	 * @throws java.lang.NullPointerException ako se metodi prosledi null
+	 * @throws java.lang.RuntimeException ako se metodi prosledi guma
+	 * koja vec postoji u listi guma vulkanizerske radnje
 	 */
 	public void dodajGumu(AutoGuma a) {
 		if (a == null)
